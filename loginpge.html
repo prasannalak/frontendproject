@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+body{
+  background-image: url('../images/backimg1.jpg');
+  background-size: cover;
+ 
+}
+.form{
+  position:absolute;
+  color:rgb(129, 221, 36);
+  font-size: x-large;
+  top:50%;
+  left:70%;
+  transform:translate(-50%,-50%);
+  width:350px;
+  height: 350px;
+  border:rgb(129, 221, 36) solid 5px;
+  outline: black;
+  border-radius: 50px;
+  background: none;
+  padding:50px;
+ 
+}
+input[type=email], input[type=password] {
+  width: 80%;
+  height:10px;
+  padding: 16px;
+  margin: 3px 5px 25px 0;
+  border: none;
+  outline: none;
+  background: #f1f1f1;
+}
+
+ input[type="submit"]{
+  border:none;
+  height:50px;
+  width:50%;
+  cursor: pointer;
+  background:rgb(129, 221, 36);
+  color:#fff;
+  font-size: x-large;
+  border-radius: 8px;
+  opacity:0.6;
+}
+.btn:hover {
+opacity: 1;
+}
+.links{
+font-size:25px;
+text-align: right;
+font-style:normal;
+text-decoration:none;
+height:30px;
+font-family:'Times New Roman', Times, serif;
+}
+a:link, a:visited {
+color:chartreuse;
+text-align: center;
+text-decoration: none;
+}
+a:hover,a:active{
+color:aliceblue;
+}
+marquee{
+  font-size: 30px;
+}
+</style>
+<body>
+  <div class="links">
+    <a href="todaysspecial.html"  >Today's Special</a>&nbsp;&nbsp;&nbsp;
+    <a href="homePage1.html" >Home</a>&nbsp;&nbsp;&nbsp;
+    <a href="aboutus.html" target='f2' >About Us </a>&nbsp;&nbsp;&nbsp;
+    <a href="register.html"  >Register</a>&nbsp;&nbsp;&nbsp;
+    <a href="loginpge.html"  >Login</a>&nbsp;&nbsp;&nbsp;
+    <a href="contactusPage.html"  >Contact Us</a>
+  </div>  
+  <marquee Style="color:rgb(129, 221, 36);">Welcome To Royal🍽Foods</marquee> 
+  <script src="login.js"></script>
+     <div class="bg"></div>
+     <div class="form">
+       <form name=form1 action="" onsubmit="return validation()">
+         <h2>Sign In</h2>
+         <div class="input">
+           <label>Email</label>
+           <input type="email" name="email" placeholder="Email" required>
+         </div>
+         <div class="input">
+           <label>Password</label>
+          <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="btn"> 
+          <input type="submit" class="btn"name="Sign-in" value="Login" >
+        </div>
+      </form>
+     </div>
+</body>
+</html>
+

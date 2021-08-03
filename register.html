@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  background-image: url('../images/backimg1.jpg');
+  background-size: cover;
+ color:rgb(129, 221, 36);
+}
+.frm{
+  position:absolute;
+  font-family:sans-serif;
+  color:rgb(129, 221, 36);
+  top:60%;
+  left:70%;
+  transform:translate(-50%,-50%);
+  width:350px;
+  height: 700px;
+  border:rgb(129, 221, 36) solid 5px;
+  outline: black;
+  border-radius: 50px;
+  background: none;
+  padding:25px;
+}
+input[type=text], input[type=password] {
+  width: 80%;
+  height:10px;
+  padding: 16px;
+  margin: 3px 5px 25px 0;
+  border: none;
+  outline: none;
+  background: #f1f1f1;
+}
+
+input[type="submit"]{
+  border:none;
+  height:50px;
+  width:50%;
+  cursor: pointer;
+  background:rgb(129, 221, 36);
+  color:#fff;
+  font-size: x-large;
+  border-radius: 8px;
+  opacity:0.6;
+}
+input[type=submit]:hover {
+  opacity: 1;
+}
+.links{
+font-size:25px;
+text-align: right;
+font-style:normal;
+text-decoration:none;
+height:30px;
+font-family:'Times New Roman', Times, serif;
+}
+a:link, a:visited {
+color:chartreuse;
+text-align: center;
+text-decoration: none;
+}
+a:hover,a:active{
+color:aliceblue;
+}
+marquee{
+  font-size:20px;
+}
+</style>
+</head>
+<body>
+  <div class="links">
+    <a href="todaysspecial.html"  >Today's Special</a>&nbsp;&nbsp;&nbsp;
+    <a href="homePage1.html" >Home</a>&nbsp;&nbsp;&nbsp;
+    <a href="aboutus.html" target='f2' >About Us </a>&nbsp;&nbsp;&nbsp;
+    <a href="register.html"  >Register</a>&nbsp;&nbsp;&nbsp;
+    <a href="loginpge.html"  >Login</a>&nbsp;&nbsp;&nbsp;
+    <a href="contactusPage.html"  >Contact Us</a>
+  </div> 
+  <marquee>Welcome To Royal🍽Foods</marquee>  
+  <script src="regi.js"></script>
+  <h1 style="text-align: center;">Register</h1>
+  <form  name="form1" action="" onsubmit="return validation()">
+    <div class="frm">
+      <label>FirstName</label>
+    <input type="text" placeholder="Enter FirstName" name="firstname"  required>
+    <label>LastName</label>
+    <input type="text" placeholder="Enter LastName" name="lastname" required> 
+    <label  class='id'><b>Gender:</b></label><br><br>
+    <input type="radio" value="Male" name="gender"  > Male   
+    <input type="radio" value="Female" name="gender"  > Female   
+    <input type="radio" value="Other" name="gender"  > Other <br><br>
+    <label>Email</label>
+    <input type="text" placeholder="Enter Email" name="email"   required> 
+    <label>Phone No</label> 
+    <span id="numlocation"></span>
+    <input type="text" name="phone" placeholder="phone no."  size="10"/ required>
+    <label>Password</label>   
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label>Confirm Password</label>
+    <input type="password" placeholder="Confirm Password" name="psw2" required>
+    <input type="submit"  value="Register" >
+  </form>
+</div>
+</body>
+</html>
