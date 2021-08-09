@@ -1,7 +1,7 @@
 # frontendproject
 
 ### Restaurent Web Page
-I have created Restuarent web page using html,css,javascript
+I have created Restuarent web page using html,css,javascript,Bootstrap
 ###Home Page
 ![image](https://user-images.githubusercontent.com/88316388/128040712-1749652a-1e19-4741-982b-7ac126cde2ac.png)
 ###Breakfast Page
